@@ -1,7 +1,7 @@
 IP=$(curl ifconfig.me)
 KEY=awskey
 
-python3 vpc_and_instance.py  > stack.json
+python3 stack.py  > stack.json
 
 aws cloudformation update-stack \
 --stack-name teststack \
